@@ -1,0 +1,48 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"jest": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"project": "tsconfig.json",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"jest",
+		"import",
+		"promise"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:jest/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/typescript",
+		"prettier/@typescript-eslint",
+		"plugin:prettier/recommended",
+		"plugin:promise/recommended"
+	],
+	"ignorePatterns": [
+		"src/schema/resolvers/types.ts"
+	],
+	"rules": {
+		"prefer-destructuring": [
+			"warn"
+		],
+		"no-await-in-loop": "warn",
+		"no-console": "warn",
+		"no-loss-of-precision": "warn",
+		"no-promise-executor-return": "error",
+		"no-unreachable-loop": "error",
+		"require-atomic-updates": "warn",
+		"array-callback-return": "warn",
+		"default-case-last": "warn",
+		"no-constructor-return": "warn",
+		"jest/no-identical-title": "off"
+	}
+}
