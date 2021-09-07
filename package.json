@@ -1,11 +1,11 @@
 {
   "name": "thrw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Throw expressions for Typescript",
   "main": ".build/index.js",
   "types": ".build/index.d.ts",
   "engines": {
-    "node": ">=15.0.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "build": "tsc",
