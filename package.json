@@ -1,55 +1,51 @@
 {
-  "name": "thrw",
-  "version": "1.0.1",
-  "description": "Throw expressions for Typescript",
-  "main": ".build/index.js",
-  "types": ".build/index.d.ts",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
-    "test": "jest",
-    "start": "npm run build && node -r source-map-support/register .build/index.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.ts": "eslint --fix"
-  },
-  "jest": {
-    "testRegex": "(/tests/.*|(\\.|/)test)\\.tsx?$",
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "maxConcurrency": 50
-  },
-  "author": "Max Yankov",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.2",
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
-    "@typescript-eslint/parser": "^4.5.0",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.14.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "husky": "^4.3.0",
-    "jest": "^26.6.0",
-    "lint-staged": "^10.4.2",
-    "prettier": "^2.1.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
-  },
-  "dependencies": {
-    "source-map-support": "^0.5.19"
-  }
+	"name": "thrw",
+	"version": "1.0.1",
+	"description": "Throw expressions for Typescript",
+	"main": ".build/index.js",
+	"types": ".build/index.d.ts",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"test": "jest"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.ts": "eslint --fix"
+	},
+	"jest": {
+		"testRegex": "(/tests/.*|(\\.|/)test)\\.tsx?$",
+		"transform": {
+			"^.+\\.ts$": "ts-jest"
+		},
+		"maxConcurrency": 50
+	},
+	"author": "Max Yankov",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^26.0.15",
+		"@types/node": "^14.14.2",
+		"@typescript-eslint/eslint-plugin": "^4.5.0",
+		"@typescript-eslint/parser": "^4.5.0",
+		"eslint": "^7.11.0",
+		"eslint-config-prettier": "^6.14.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jest": "^24.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-promise": "^4.2.1",
+		"husky": "^4.3.0",
+		"jest": "^26.6.0",
+		"lint-staged": "^10.4.2",
+		"prettier": "^2.1.2",
+		"ts-jest": "^26.4.1",
+		"typescript": "^4.0.3"
+	}
 }
