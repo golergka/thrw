@@ -8,4 +8,8 @@ describe('thrw', () => {
 	it('throws provided error', () => {
 		expect(() => thrw(new Error('error'))).toThrowError('error')
 	})
+
+	it('throws undefined', () => {
+		expect(() => thrw(undefined)).toThrow(undefined)
+	})
 })
